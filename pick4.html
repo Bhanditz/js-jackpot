@@ -1,22 +1,23 @@
-<ons-page style="background-color:#22313F">
-    <ons-toolbar style="background-color:#ECF0F1">
-        <div class="left">
-                <ons-toolbar-button ng-click="app.slidingMenu.toggleMenu()"><ons-icon icon="bars" style="color:#E87E04"></ons-icon></ons-toolbar-button>
-        </div>
-        <div class="center heading">JACKPOT</div>
-    </ons-toolbar>
-    <div class="headType">
-        <p>Pick 4</p>
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Pick 4</title>
+    <script src="js/scripts.js"></script>
+  </head>
+  <body>
+    <h1>Pick 4</h1>
+    <div>
+      <button onclick="get4()">Generate Numbers</button>
     </div>
-    <div style="text-align: center">
-            <div><ons-button class="generator" onclick="get4()" modifier="outline" class="button button--outline">Generate Numbers</ons-button></div>    
-    </div>
-    <div style="text-align:center">
-        <p id="P41" class="circle">  </p>
-        <p id="P42" class="circle">  </p>
-    </div>
-    <div style="text-align:center">
-        <p id="P43" class="circle">  </p>
-        <p id="P44" class="circle">  </p>
+    <div class="numbers">
+      <div>
+          <p id="P41" class="circle">  </p>
+          <p id="P42" class="circle">  </p>
+      </div>
+      <div>
+          <p id="P43" class="circle">  </p>
+          <p id="P44" class="circle">  </p>
+      </div>
     </div>
 </ons-page>
